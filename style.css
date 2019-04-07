@@ -356,7 +356,7 @@ footer p {
 
     .top-nav-container {
         display: grid;
-        grid-template-columns: 1fr 18%;
+        grid-template-columns: 1fr auto;
         background-color: #111;
         margin: 10px 0 0 0;
     }
@@ -378,7 +378,4 @@ footer p {
         display: block;
     }
 
-    .fb-icon {
-        text-align: left;
-    }
 }
