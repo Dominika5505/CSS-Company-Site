@@ -1,0 +1,381 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hr-toggle {
+
+}
+
+hr {
+    border: none;
+    border-top: #BBB dotted 10px;
+    margin: 25px auto;
+    width: 10px;
+}
+
+/* Clear Fix */
+
+.clear-fix {
+    clear: both;
+}
+
+/* Backgrounds */
+
+.white-bgr {
+    background-color: #FFF;
+}
+
+.grey-bgr {
+    background-color: #DDD;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.logo {
+    width: 80px;
+    padding: 10px;
+}
+
+/* Top Navigácia */
+
+.top-nav {
+    list-style: none;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.top-nav-container {
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    background-color: #111;
+}
+
+.top-nav li,
+.top-nav p {
+    display: inline-block;
+}
+
+.top-nav a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.top-nav a:hover {
+    background-color: #333;
+}
+
+.fb-icon {
+    text-align: right;
+    padding: 13px 20px 10px 20px;
+}
+
+.fa-facebook-f {
+    background-color: #FFF;
+    border-radius: 50%;
+    padding: 5px 8px;
+}
+
+.nav-cislo {
+    background-color: #333;
+    color: #FFF;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    width: 5px;
+    margin: 0 0 0 5px;
+}
+
+/* Menu Icon */
+
+.menu-icon .fa-bars{
+    display: none;
+}
+
+.submenu {
+    padding: 0;
+}
+
+input#toggle {
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+}
+
+/* Hlavička */
+.header-image {
+    background-color: #fda500;
+    color: #FFF;
+    padding: 0;
+    line-height: 15;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.toggle-img {
+    text-align: center;
+}
+
+.arrows {
+    background-color: #BBB;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    color: #FFF;
+}
+
+/* Box Section */
+.box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.box {
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0 0 20px 0;
+}
+
+
+.box h2 {
+    padding: 0;
+    margin-top: 0;
+}
+
+.box p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Content Box */
+
+.content-box {
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 1fr 30%;
+}
+
+.content {
+    padding: 0 30px 0 0;
+}
+
+/* Content - navigácia */
+
+.content-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content-ul a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 20px 30px;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.content-ul a:hover {
+    background-color: #111;
+    color: #FFF
+}
+
+
+/* Gallery */
+
+.gallery-container {
+    text-align: center;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gallery-image p {
+    line-height: 10;
+}
+
+#gallery-orange {
+    background-color: orange;
+}
+
+#gallery-red {
+    background-color: red;
+}
+
+#gallery-blue {
+    background-color: cornflowerblue;
+}
+
+#gallery-green {
+    background-color: greenyellow;
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: #FFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer p {
+    margin: 0;
+    padding: 20px;
+}
+
+.green {
+    color: green;
+    text-align: right;
+}
+
+
+@media screen and (max-width: 1070px) {
+
+    /* Box Section */
+    .box-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+
+    .box:last-of-type {
+        grid-column: 1 / 3;
+    }
+
+
+    /* Content Box */
+
+    .content-box {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Gallery */
+
+    .image-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .gallery-image p {
+        line-height: 12;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 779px) {
+
+    /* Box Section */
+    .box-container {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+
+    /* Content Box */
+
+    .content-box {
+        display: block;
+    }
+
+
+    /* Gallery */
+
+    .image-container {
+        display: block;
+    }
+
+    .gallery-image p {
+        line-height: 12;
+        margin: 0;
+    }
+
+    /* Footer */
+
+    footer {
+        display: block;
+    }
+
+    footer p {
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .green {
+        color: green;
+        text-align: center;
+    }
+
+    /* Submenu */
+
+    .top-nav .fa-bars {
+        display: inline-block;
+        padding: 20px;
+        color: #FFF;
+        cursor: pointer;
+    }
+
+    .submenu {
+        display: none;
+    }
+
+    input#toggle:checked ~ .submenu {
+        display: block;
+    }
+
+    input#toggle {
+        position: initial;
+        visibility: hidden;
+        transition: display 1s;
+    }
+
+    label {
+        display: inline-block;
+        cursor: pointer;
+        margin: 0;
+    }
+
+    .top-nav-container {
+        display: grid;
+        grid-template-columns: 1fr 10%;
+        background-color: #111;
+        margin: 10px 0 0 0;
+    }
+
+    .top-nav-container ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .top-nav-container a{
+        text-decoration: none;
+        color: #FFF;
+        display: block;
+        padding: 20px;
+    }
+
+    .top-nav-container li {
+        display: block;
+    }
+
+    .fb-icon {
+        text-align: left;
+    }
+}
