@@ -4,10 +4,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.hr-toggle {
-
-}
-
 hr {
     border: none;
     border-top: #BBB dotted 10px;
@@ -66,7 +62,7 @@ hr {
     color: #FFF;
 }
 
-.top-nav a:hover {
+.top-nav a:hover, .top-nav a:active {
     background-color: #333;
 }
 
@@ -183,7 +179,7 @@ input#toggle {
     transition: background-color 0.5s;
 }
 
-.content-ul a:hover {
+.content-ul a:hover, .content-ul a:active {
     background-color: #111;
     color: #FFF
 }
@@ -280,6 +276,14 @@ footer p {
 
 @media screen and (max-width: 779px) {
 
+    .container {
+        width: 100%;
+    }
+
+    .header-image {
+        line-height: 13;
+    }
+
     /* Box Section */
     .box-container {
         display: block;
@@ -346,14 +350,13 @@ footer p {
     }
 
     label {
-        display: inline-block;
         cursor: pointer;
         margin: 0;
     }
 
     .top-nav-container {
         display: grid;
-        grid-template-columns: 1fr 10%;
+        grid-template-columns: 1fr 18%;
         background-color: #111;
         margin: 10px 0 0 0;
     }
